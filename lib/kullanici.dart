@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:kdlyrz/ana_sayfa.dart';
 import 'package:kdlyrz/problemler.dart';
 
 class KullaniciBilgileriSayfasi extends StatefulWidget {
@@ -117,7 +118,7 @@ class _KullaniciBilgileriSayfasiState extends State<KullaniciBilgileriSayfasi> {
                 Navigator.of(context).pop(); // Öncelikle dialog'u kapat
                 Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
-                    builder: (context) => ProblemlerSayfasi(email: '',), // ProblemlerSayfasi'na yönlendirin
+                    builder: (context) => AnaSayfa(), // ProblemlerSayfasi'na yönlendirin
                   ),
                 );
               },
