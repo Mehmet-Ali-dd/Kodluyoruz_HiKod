@@ -118,7 +118,7 @@ class _KullaniciBilgileriSayfasiState extends State<KullaniciBilgileriSayfasi> {
                 Navigator.of(context).pop(); // Öncelikle dialog'u kapat
                 Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
-                    builder: (context) => AnaSayfa(), // ProblemlerSayfasi'na yönlendirin
+                    builder: (context) => AnaSayfa(), // AnaSayfaya yönlendir
                   ),
                 );
               },
